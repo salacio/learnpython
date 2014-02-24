@@ -1,3 +1,4 @@
+#! /usr/bin/env python2
 from sys import exit
 
 def gold_room():
@@ -36,7 +37,7 @@ def bear_room():
         elif next == "open door" and bear_moved:
             gold_room()
         else:
-            print "I got no idea what that means."
+            print "I've got no idea what that means."
 
 
 def cthulhu_room():
@@ -74,3 +75,5 @@ def start():
 
 
 start()
+
+# vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4
