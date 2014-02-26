@@ -7,3 +7,4 @@ class Child(Parent):
 
     def altered(self):
         print("CHILD, BEFORE PARENT altered()")
+        super(
