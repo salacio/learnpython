@@ -105,17 +105,18 @@ class LaserWeaponArmory(Scene):
         guesses = 0
 
         while guess != code and guesses < 10:
-            print "BZZZZEDDD! %s" % (code)
+            print "BZZZZEDDD!"
             guesses += 1
             guess = raw_input("[keypad]> ")
-
-        if guess == code:
-            print "The container clicks open and the seal breaks, letting gas out."
+        
+        elif guess == code:
+            print "\nThe container clicks open and the seal breaks, letting gas out."
             print "You grab the neutron bomb and run as fast as you can to the"
             print "bridge where you must place it in the right spot."
             return 'the_bridge'
+        
         else:
-            print "The lock buzzes one last time and then you hear a sickening"
+            print "\nThe lock buzzes one last time and then you hear a sickening"
             print "melting sound as the mechanism is fused together."
             print "You decide to sit there, and finally the Gothons blow up the"
             print "ship from their ship and you die."
@@ -125,7 +126,7 @@ class LaserWeaponArmory(Scene):
 class TheBridge(Scene):
     
     def enter(self):
-        print "You burst onto the Bridge with the neutron destruct bomb"
+        print "\nYou burst onto the Bridge with the neutron destruct bomb"
         print "under your arm and surprise five Gothons who are trying to"
         print "take control of the ship. Each of them has an even uglier"
         print "clown costume that the last. They haven't pulled their"
@@ -135,7 +136,7 @@ class TheBridge(Scene):
         action = raw_input("> ")
 
         if action == "Throw the bomb.":
-            print "In a panic you throw the bomb at the group of Gothons"
+            print "\nIn a panic you throw the bomb at the group of Gothons"
             print "and make a leap for the door. Right as you drop it a"
             print "Gothon shoots you right in the back killing you."
             print "As you die you see another Gothon frantically try to disarm"
@@ -144,7 +145,7 @@ class TheBridge(Scene):
             return 'death'
 
         elif action == "Slowly place the bomb.":
-            print "You point your blaster at the bomb under your arm"
+            print "\nYou point your blaster at the bomb under your arm"
             print "and the Gothons put their hands up and start to sweat."
             print "You inch backward to the door, open it and then carefully"
             print "place the bomb on the floor, pointing your blaster at it."
