@@ -8,7 +8,7 @@ config = {
         'author':'David G Shields',
         'url':'https://github.com/salacio',
         'download_url':'Where to download it.',
-        'author_email':'salcio@gmail.com',
+        'author_email':'salacio@gmail.com',
         'version':'0.1',
         'install_requires':['nose'],
         'packages':['NAME'],
