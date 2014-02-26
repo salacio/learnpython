@@ -15,7 +15,7 @@ class Engine(object):
 
     def play(self):
         current_scene = self.scene_map.opening_scene()
-        #print "Play's first scene", current_scene
+        #print "Plays first scene", current_scene
 
         while True:
             #print "\n----------"
@@ -79,6 +79,12 @@ class CentralCorridor(Scene):
             print "While he's laughing you run up and shoot him square in the head."
             print "putting him down, then jump through the Weapon Armory door."
             return 'laser_weapon_armory'
+        
+        elif action == "Skip to end.":
+            return 'finished'
+
+        elif action == "Go to The Bridge.":
+            return 'the_bridge'
 
         else:
             print "DOES NOT COMPUTE!"
