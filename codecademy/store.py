@@ -16,8 +16,8 @@ stock = {
 
 """for key in prices:
     print("%s\nprice: %s\nstock: %s\n"
-            % (key, prices[key], stock[key]))
-"""
+            % (key, prices[key], stock[key]))"""
+
 def compute_bill(food):
     total = 0
     for item in food:
