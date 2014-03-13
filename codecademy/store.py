@@ -14,12 +14,23 @@ stock = {
         "pear" : 15
         }
 
-"""for key in prices:
-    print("%s\nprice: %s\nstock: %s\n"
-            % (key, prices[key], stock[key]))"""
+def stocking():
+    for key in prices:
+        print("\n%s\nprice: %s\nstock: %s\n"
+                % (key, prices[key], stock[key]))
 
 def compute_bill(food):
     total = 0
-    for food in prices:
-        total += food
+    for item in food:
+        if stock[item] > 0:
+            total += prices[item]
+            stock[item] -= stock[item]
+        else:
+            total += 0
     return total
+
+stocking()
+
+print(compute_bill(shopping_list))
+
+stocking()
